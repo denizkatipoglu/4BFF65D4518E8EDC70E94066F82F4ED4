@@ -155,7 +155,7 @@ class FRMission : BaseFragment<FRMissionViewModel>() {
                                             item.coordinateY
                                         )
                                     }
-                                    tvTravelPlanet.text = planetList[planetList.size - 1].name
+                                    tvTravelPlanet.text = planetList[0].name
                                     Toast.makeText(
                                         context,
                                         "Yeterli kapasite yok",
@@ -185,7 +185,7 @@ class FRMission : BaseFragment<FRMissionViewModel>() {
                                             item.coordinateY
                                         )
                                     }
-                                    tvTravelPlanet.text = planetList[planetList.size - 1].name
+                                    tvTravelPlanet.text = planetList[0].name
                                     Toast.makeText(context, "Yeterli eus yok", Toast.LENGTH_SHORT)
                                         .show()
                                 }
