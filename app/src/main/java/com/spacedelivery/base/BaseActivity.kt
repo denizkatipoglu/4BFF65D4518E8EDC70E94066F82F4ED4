@@ -19,9 +19,7 @@ import java.lang.reflect.ParameterizedType
 import javax.inject.Inject
 
 
-/**
- * Created by Deniz KATIPOGLU on 17,December,2020
- */
+
 abstract class BaseActivity<VM : BaseViewModel> : AppCompatActivity(), HasSupportFragmentInjector {
 
     @Inject

@@ -6,9 +6,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.annotation.CallSuper
 
-/**
- * Created by Deniz KATIPOGLU on 17,December,2020
- */
+
 abstract class BaseViewModel : ViewModel() {
 
     lateinit var onShowToastListener: MutableLiveData<String>

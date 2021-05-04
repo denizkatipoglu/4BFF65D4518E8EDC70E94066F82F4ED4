@@ -9,9 +9,7 @@ import dagger.Module
 import dagger.android.AndroidInjectionModule
 import dagger.android.ContributesAndroidInjector
 
-/**
- * Created by Deniz KATIPOGLU on 17,December,2020
- */
+
 @Module(includes = [AndroidInjectionModule::class])
 abstract class AppPages {
 

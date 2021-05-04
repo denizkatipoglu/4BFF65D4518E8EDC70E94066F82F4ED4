@@ -9,9 +9,7 @@ import com.spacedelivery.widget.Menu
 import kotlinx.android.synthetic.main.ac_mission_page.*
 
 
-/**
- * Created by Deniz KATIPOGLU on 17,December,2020
- */
+
 class ACMissionPage : BaseActivity<ACMissionViewModel>() {
 
 

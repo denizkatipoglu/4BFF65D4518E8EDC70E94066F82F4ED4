@@ -17,9 +17,7 @@ import java.lang.reflect.ParameterizedType
 import java.util.logging.Logger
 import javax.inject.Inject
 
-/**
- * Created by Deniz Katipoğlu on 29.07.2018.
- */
+
 abstract class BaseFragment<VM : BaseViewModel> : Fragment() {
 
     @Inject

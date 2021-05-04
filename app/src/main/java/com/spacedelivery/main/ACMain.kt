@@ -17,9 +17,7 @@ import kotlinx.android.synthetic.main.ac_main.*
 import kotlinx.coroutines.*
 
 
-/**
- * Created by Deniz KATIPOGLU on 03,MAY,2021
- */
+
 class ACMain : BaseActivity<ACMainViewModel>(), SeekBar.OnSeekBarChangeListener {
 
     private val TOTAL_AMOUNT = 15

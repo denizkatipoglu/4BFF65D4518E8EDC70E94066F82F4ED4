@@ -1,8 +1,6 @@
 package com.spacedelivery.di
 
-/**
- * Created by Deniz KATIPOGLU on 17,December,2020
- */
+
 import androidx.lifecycle.ViewModel
 import dagger.MapKey
 import kotlin.reflect.KClass

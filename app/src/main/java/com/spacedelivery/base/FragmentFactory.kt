@@ -6,9 +6,6 @@ import androidx.fragment.app.FragmentManager
 import android.text.TextUtils
 import android.view.View
 
-/**
- * Created by Deniz Katipoğlu on 29.07.2018.
- */
 class FragmentFactory {
     private var mFragment: Fragment? = null
     private var mDialogFragment: DialogFragment? = null

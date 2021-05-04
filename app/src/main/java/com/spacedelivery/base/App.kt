@@ -11,9 +11,7 @@ import javax.inject.Inject
 import com.spacedelivery.di.DaggerAppComponent
 import kotlin.math.sqrt
 
-/**
- * Created by Deniz KATIPOGLU on 17,December,2020
- */
+
 class App : Application(), HasActivityInjector {
 
     lateinit var wikiComponent: AppComponent

@@ -11,9 +11,6 @@ import dagger.Binds
 import dagger.Module
 import dagger.multibindings.IntoMap
 
-/**
- * Created by Deniz KATIPOGLU on 17,December,2020
- */
 @Module
 abstract class AppViewModels {
 

@@ -1,8 +1,5 @@
 package com.spacedelivery.utils;
 
-/**
- * Created by Deniz KATIPOGLU on 18,December,2020
- */
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
