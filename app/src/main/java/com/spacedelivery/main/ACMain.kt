@@ -54,7 +54,7 @@ class ACMain : BaseActivity<ACMainViewModel>(), SeekBar.OnSeekBarChangeListener 
             } else {
                 spaceInfo = SpaceName(
                     1, etSpaceName.text.toString(), seekBar3.progress.toFloat() * 10000,
-                    seekBar1.progress.toFloat() * 10000, seekBar2.progress.toFloat() * 20,10
+                    seekBar1.progress.toFloat() * 10000, seekBar2.progress.toFloat() * 20,100
                 )
                 GlobalScope.launch {
                     if (db!!.TodoDao().getAll().isNotEmpty()) {
