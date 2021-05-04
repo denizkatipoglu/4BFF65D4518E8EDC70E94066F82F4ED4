@@ -12,10 +12,8 @@ import com.spacedelivery.base.BaseActivity
 import com.spacedelivery.database.PlanetDB
 import com.spacedelivery.database.SpaceName
 import com.spacedelivery.mission.ACMissionPage
-import com.spacedelivery.utils.Preferences
 import kotlinx.android.synthetic.main.ac_main.*
 import kotlinx.coroutines.*
-
 
 
 class ACMain : BaseActivity<ACMainViewModel>(), SeekBar.OnSeekBarChangeListener {
@@ -36,9 +34,10 @@ class ACMain : BaseActivity<ACMainViewModel>(), SeekBar.OnSeekBarChangeListener 
         seekBar2.setOnSeekBarChangeListener(this)
         seekBar3.setOnSeekBarChangeListener(this)
 
-        if (!Preferences.getBoolean(Preferences.Keys.SERVICE_ACTIVATED, false)) {
-            viewModel.getPlanetService()
+        GlobalScope.launch {
+            db!!.clearAllTables()
         }
+            viewModel.getPlanetService()
         cvCont.setOnClickListener {
 
             if (TextUtils.isEmpty(etSpaceName.text)) {
@@ -52,7 +51,7 @@ class ACMain : BaseActivity<ACMainViewModel>(), SeekBar.OnSeekBarChangeListener 
             } else {
                 spaceInfo = SpaceName(
                     1, etSpaceName.text.toString(), seekBar3.progress.toFloat() * 10000,
-                    seekBar1.progress.toFloat() * 10000, seekBar2.progress.toFloat() * 20,100
+                    seekBar1.progress.toFloat() * 10000, seekBar2.progress.toFloat() * 20, 100
                 )
                 GlobalScope.launch {
                     if (db!!.TodoDao().getAll().isNotEmpty()) {
@@ -68,7 +67,6 @@ class ACMain : BaseActivity<ACMainViewModel>(), SeekBar.OnSeekBarChangeListener 
     override fun setReceivers() {
         viewModel.onPlanetServiceListener.observe(this, Observer {
             GlobalScope.launch {
-                Preferences.setBoolean(Preferences.Keys.SERVICE_ACTIVATED, true)
                 for (i in 0 until it!!.size) {
                     db!!.TodoDao().insertAllPlanet(
                         PlanetDB(
