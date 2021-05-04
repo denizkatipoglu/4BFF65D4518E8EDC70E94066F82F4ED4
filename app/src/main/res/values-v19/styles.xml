@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="colorControlHighlight">@color/colorPrimaryDark</item>
+
+        <item name="android:windowTranslucentStatus">true</item>
+
+    </style>
+
+    <style name="ThemeOverlay.PrimaryPalette.Red" parent="">
+        <item name="colorPrimary">#e53935</item>
+        <item name="colorPrimaryDark">#ab000d</item>
+    </style>
+
+</resources>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rlMainRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="32dp"
+    android:layout_marginRight="16dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.spacedelivery.utils.TextView
+            style="@style/TextXLarge.Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dağıtılacak Puan: "
+            android:textColor="@color/colorPrimaryDark" />
+
+        <com.spacedelivery.utils.TextView
+            android:id="@+id/spacePoint"
+            style="@style/TextXLarge.Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 12"
+            android:textColor="@color/colorPrimaryDark" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/gray_soft" />
+
+    <com.spacedelivery.utils.EditText
+        android:id="@+id/etSpaceName"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:background="@null"
+        android:hint="Space Game Name"
+        android:paddingLeft="16dp" />
+
+    <com.spacedelivery.utils.TextView
+        style="@style/TextNormal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Dayanıklılık"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:max="15"
+        android:progress="1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+<!--    <com.google.android.material.slider.Slider-->
+<!--        android:id="@+id/sliderDurability"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:stepSize="1"-->
+<!--        android:textAppearance="@style/TextAppearance.MaterialComponents.Button"-->
+<!--        android:valueFrom="0"-->
+<!--        android:valueTo="13" />-->
+
+    <com.spacedelivery.utils.TextView
+        style="@style/TextNormal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Hız"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <SeekBar
+        android:id="@+id/seekBar2"
+        android:max="15"
+        android:progress="1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+<!--    <com.google.android.material.slider.Slider-->
+<!--        android:id="@+id/sliderPace"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:stepSize="1"-->
+<!--        android:textAppearance="@style/TextAppearance.MaterialComponents.Button"-->
+<!--        android:valueFrom="0"-->
+<!--        android:valueTo="13" />-->
+
+
+    <com.spacedelivery.utils.TextView
+        style="@style/TextNormal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Kapasite"
+        android:textColor="@color/colorPrimaryDark" />
+
+
+<!--    <com.google.android.material.slider.Slider-->
+<!--        android:id="@+id/sliderCapacity"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:stepSize="1"-->
+<!--        android:value="0"-->
+<!--        android:textAppearance="@style/TextAppearance.MaterialComponents.Button"-->
+<!--        android:valueFrom="0"-->
+<!--        android:valueTo="13" />-->
+
+
+
+    <SeekBar
+        android:id="@+id/seekBar3"
+        android:max="15"
+        android:progress="1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvCont"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/white"
+        app:cardCornerRadius="1dp"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true">
+
+            <com.spacedelivery.utils.TextView
+                style="@style/TextSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Devam Et"
+                android:textColor="#000" />
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

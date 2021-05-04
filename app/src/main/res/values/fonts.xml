@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextType">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!--##################################################-->
+    <!--PROPERTIES-->
+    <!--##################################################-->
+
+    <!--XXSize-->
+
+    <!--TypeFace-->
+
+    <!--XXSize-->
+    <style name="TextXXSmall" parent="TextType">
+        <item name="android:textSize">@dimen/text_xx_small_size</item>
+        <item name="typeface">normal</item>
+    </style>
+
+    <!--TypeFace-->
+
+    <style name="TextXXSmall.Light">
+        <item name="typeface">light</item>
+    </style>
+
+    <style name="TextXXSmall.Bold">
+        <item name="typeface">bold</item>
+    </style>
+
+    <style name="TextXXSmall.Medium">
+        <item name="typeface">medium</item>
+    </style>
+
+    <!--XSize-->
+    <style name="TextXSmall" parent="TextType">
+        <item name="android:textSize">@dimen/text_x_small_size</item>
+        <item name="typeface">normal</item>
+    </style>
+
+    <!--TypeFace-->
+    <style name="TextXSmall.Light">
+        <item name="typeface">light</item>
+    </style>
+
+    <style name="TextXSmall.Bold">
+        <item name="typeface">bold</item>
+    </style>
+
+    <!--Size-->
+    <style name="TextSmall" parent="TextType">
+        <item name="android:textSize">@dimen/text_small_size</item>
+        <item name="typeface">normal</item>
+    </style>
+
+    <!--TypeFace-->
+    <style name="TextSmall.Light">
+        <item name="typeface">light</item>
+    </style>
+
+    <style name="TextSmall.Bold">
+        <item name="typeface">bold</item>
+    </style>
+
+    <style name="TextSmall.Medium">
+        <item name="typeface">medium</item>
+    </style>
+
+    <!--NORMAL-->
+
+    <!--Size-->
+    <style name="TextNormal" parent="TextType">
+        <item name="android:textSize">@dimen/text_normal_size</item>
+        <item name="typeface">normal</item>
+    </style>
+
+    <!--TypeFace-->
+
+    <style name="TextNormal.Light">
+        <item name="typeface">light</item>
+    </style>
+
+    <style name="TextNormal.Bold">
+        <item name="typeface">bold</item>
+    </style>
+
+    <style name="TextNormal.Medium">
+        <item name="typeface">medium</item>
+    </style>
+
+
+    <!--LARGE-->
+
+    <!--Size-->
+    <style name="TextLarge" parent="TextType">
+        <item name="android:textSize">@dimen/text_large_size</item>
+        <item name="typeface">normal</item>
+    </style>
+
+    <!--TypeFace-->
+
+    <style name="TextLarge.Light">
+        <item name="typeface">light</item>
+    </style>
+
+    <style name="TextLarge.Bold">
+        <item name="typeface">bold</item>
+    </style>
+
+    <style name="TextLarge.Medium">
+        <item name="typeface">medium</item>
+    </style>
+
+
+    <!--X LARGE-->
+
+    <!--Size-->
+    <style name="TextXLarge" parent="TextType">
+        <item name="android:textSize">@dimen/text_x_large_size</item>
+        <item name="typeface">normal</item>
+    </style>
+
+    <style name="TextXLarge.Light">
+        <item name="typeface">light</item>
+    </style>
+
+    <style name="TextXLarge.Bold">
+        <item name="typeface">bold</item>
+    </style>
+
+    <style name="TextXLarge.Medium">
+        <item name="typeface">medium</item>
+    </style>
+
+
+</resources>

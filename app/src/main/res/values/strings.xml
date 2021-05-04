@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">SpaceDelivery</string>
+    <string name="notes">Notes</string>
+    <string name="title">Title</string>
+    <string name="enter_title">Enter title</string>
+    <string name="desc">Desc</string>
+    <string name="enter_desc">Enter desc</string>
+    <string name="image_url">Image Url</string>
+    <string name="save">Save</string>
+    <string name="edit">Edit</string>
+    <string name="pls_title">Please enter title</string>
+    <string name="pls_des">Please enter description</string>
+    <string name="no_data">There is no any data</string>
+</resources>
