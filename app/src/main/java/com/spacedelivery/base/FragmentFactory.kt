@@ -5,8 +5,6 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import android.text.TextUtils
 import android.view.View
-import com.igasystem.iga.util.fragment.AnimationType
-import com.igasystem.iga.util.fragment.TransitionType
 
 /**
  * Created by Deniz Katipoğlu on 29.07.2018.

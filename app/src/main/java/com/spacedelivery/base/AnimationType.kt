@@ -1,11 +1,8 @@
-package com.igasystem.iga.util.fragment
+package com.spacedelivery.base
 
 import com.spacedelivery.R
 
 
-/**
- * Created by Deniz Katipoğlu on 29.07.2018.
- */
 enum class AnimationType {
     ENTER_FROM_LEFT,
     ENTER_FROM_RIGHT,

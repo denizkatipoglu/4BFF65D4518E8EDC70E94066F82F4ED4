@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">SpaceDelivery</string>
-    <string name="notes">Notes</string>
     <string name="title">Title</string>
     <string name="enter_title">Enter title</string>
     <string name="desc">Desc</string>

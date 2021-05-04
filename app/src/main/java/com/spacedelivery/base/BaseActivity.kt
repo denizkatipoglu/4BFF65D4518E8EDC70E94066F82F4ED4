@@ -8,8 +8,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.igasystem.iga.util.fragment.AnimationType
-import com.igasystem.iga.util.fragment.TransitionType
 
 import com.spacedelivery.di.ViewModelFactory
 import com.spacedelivery.dialog.DGProgress
