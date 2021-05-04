@@ -117,7 +117,7 @@ class FRMission : BaseFragment<FRMissionViewModel>() {
                             if (spaceInfo!!.damage >= 10) {
                                 start()
                             } else {
-                                rvPlanet.smoothScrollToPosition(rvPlanet.adapter!!.itemCount - 1)
+                                rvPlanet.smoothScrollToPosition(0)
                             }
 
                         }
@@ -145,9 +145,9 @@ class FRMission : BaseFragment<FRMissionViewModel>() {
                             } else {
                                 planetDB.need -= spaceInfo!!.capacity.toInt()
                                 withContext(Dispatchers.Main) {
-                                    rvPlanet.smoothScrollToPosition(planetList!!.size - 1)
+                                    rvPlanet.smoothScrollToPosition(0)
 
-                                    for (item in planetList) {
+                                    for (item in planetList!!) {
                                         item.eus = App.getInstance()!!.distanceTwoPlanet(
                                             planetList[planetList.size - 1].coordinateX,
                                             item.coordinateX,
@@ -176,8 +176,8 @@ class FRMission : BaseFragment<FRMissionViewModel>() {
                             } else {
                                 planetDB.eus -= spaceInfo!!.pace
                                 withContext(Dispatchers.Main) {
-                                    rvPlanet.smoothScrollToPosition(planetList!!.size - 1)
-                                    for (item in planetList) {
+                                    rvPlanet.smoothScrollToPosition(0)
+                                    for (item in planetList!!) {
                                         item.eus = App.getInstance()!!.distanceTwoPlanet(
                                             planetList[planetList.size - 1].coordinateX,
                                             item.coordinateX,

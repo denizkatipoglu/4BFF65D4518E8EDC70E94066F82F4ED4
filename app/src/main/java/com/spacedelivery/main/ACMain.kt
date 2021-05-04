@@ -1,6 +1,7 @@
 package com.spacedelivery.main
 
 import android.content.Intent
+import android.os.Bundle
 import android.text.TextUtils
 import android.widget.SeekBar
 import android.widget.Toast
@@ -28,6 +29,11 @@ class ACMain : BaseActivity<ACMainViewModel>(), SeekBar.OnSeekBarChangeListener 
         return R.layout.ac_main
     }
 
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+    }
+
     override fun setListeners() {
 
         seekBar1.setOnSeekBarChangeListener(this)
@@ -37,7 +43,8 @@ class ACMain : BaseActivity<ACMainViewModel>(), SeekBar.OnSeekBarChangeListener 
         GlobalScope.launch {
             db!!.clearAllTables()
         }
-            viewModel.getPlanetService()
+        viewModel.getPlanetService()
+
         cvCont.setOnClickListener {
 
             if (TextUtils.isEmpty(etSpaceName.text)) {
@@ -70,7 +77,7 @@ class ACMain : BaseActivity<ACMainViewModel>(), SeekBar.OnSeekBarChangeListener 
                 for (i in 0 until it!!.size) {
                     db!!.TodoDao().insertAllPlanet(
                         PlanetDB(
-                            i,
+                            i+1,
                             it[i].name,
                             it[i].coordinateX,
                             it[i].coordinateY,
